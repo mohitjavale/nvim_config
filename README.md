@@ -22,7 +22,9 @@ Install jet brains mono nerd font
 ```
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
-unzip -o JetBrainsMono.zip && rm JetBrainsMono.zip && fc-cache -f
+unzip -o JetBrainsMono.zip JetBrainsMonoNLNerdFontMono-{Regular,Bold,Italic,BoldItalic}.ttf
+rm JetBrainsMono.zip && fc-cache -f
+cd -
 ```
 
 Install nodejs for few lsp's
